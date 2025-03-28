@@ -26,9 +26,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: product-catalog-service/package-lock.json
     - run: npm ci
+      working-directory: product-catalog-service
     - run: npm run build --if-present
+      working-directory: product-catalog-service
     - run: npm test
+      working-directory: product-catalog-service
     - run: | 
         touch .env
         echo "${{ secrets.PROD_ENV }}" > .env
+      working-directory: product-catalog-service
