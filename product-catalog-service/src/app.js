@@ -60,7 +60,7 @@ app.use(compression());
 
 // Health check endpoint
 app.get('/health', (req, res) => {
-  res.status(200).json({ status: 'success', message: 'Service is healthy' });
+  res.status(200).json({ status: 'success', message: 'Service is healthy...' });
 });
 
 // API routes
