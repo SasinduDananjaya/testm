@@ -38,3 +38,5 @@ jobs:
         touch .env
         echo "${{ secrets.PROD_ENV }}" > .env
       working-directory: product-catalog-service
+
+    - run: pm2 restart BackendAPI
