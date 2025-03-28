@@ -31,7 +31,7 @@ jobs:
       working-directory: product-catalog-service
     - run: npm run build --if-present
       working-directory: product-catalog-service
-    - run: npm test
+    - run: npm test --if-present
       working-directory: product-catalog-service
     - run: | 
         touch .env
