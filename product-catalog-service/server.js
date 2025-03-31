@@ -24,7 +24,7 @@ process.on('uncaughtException', (err) => {
 //connect to MongoDB
 connectDB();
 
-// Initialize Express app
+//Initialize Express app
 const app = express();
 
 // Set security HTTP headers
