@@ -21,7 +21,7 @@ process.on('uncaughtException', (err) => {
   process.exit(1);
 });
 
-// Connect to MongoDB
+//connect to MongoDB
 connectDB();
 
 // Initialize Express app
