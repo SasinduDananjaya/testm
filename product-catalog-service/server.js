@@ -15,7 +15,7 @@ import { connectDB } from './src/config/database.js';
 import logger from './src/utils/logger.js';
 import config from './src/config/environment.js';
 
-// Uncaught exception handler
+//Uncaught exception handler
 process.on('uncaughtException', (err) => {
   logger.error('UNCAUGHT EXCEPTION! Shutting down...', err);
   process.exit(1);
